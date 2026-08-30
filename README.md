@@ -162,10 +162,13 @@ Screenshot placeholders and a privacy checklist are in [`docs/images/`](docs/ima
 Render is the recommended first host because this is a conventional long-running FastAPI service with server-rendered templates and a writable Demo SQLite file. The included `render.yaml` uses:
 
 ```text
-Build: pip install .
+Build: python scripts/build_static_bundle.py && pip install .
 Start: uvicorn app.main:app --host 0.0.0.0 --port $PORT
 Health: /health
 ```
+
+The build step combines the maintained CSS source files into one versioned `app.css` request.
+Static responses use explicit immutable caching; changing the bundle or favicon changes the URL hash.
 
 Render's [FastAPI guide](https://render.com/docs/deploy-fastapi) documents the same Uvicorn host/port pattern. Railway is also suitable for a long-running Python service. Vercel now supports FastAPI, but its function-oriented runtime is less natural for this Demo's mutable SQLite state; use it only after moving writable state to an external database. No deployment or repository creation is performed by this project preparation.
 

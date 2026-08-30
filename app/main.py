@@ -20,11 +20,11 @@ from fastapi import (
     UploadFile,
 )
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sqlalchemy import case, or_, select
 from sqlalchemy.orm import Session, joinedload
 
+from app.assets import CachedStaticFiles, asset_version
 from app.collection_pipeline import collection_record_diagnostic, run_enabled_sources, run_source
 from app.collectors import COLLECTORS
 from app.application_action import ACTION_LABELS, recommended_resume_version
@@ -114,9 +114,15 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(title=settings.app_name, version="0.1.0", lifespan=lifespan)
-app.mount("/static", StaticFiles(directory=ROOT / "app" / "static"), name="static")
+static_directory = ROOT / "app" / "static"
+app.mount("/static", CachedStaticFiles(directory=static_directory), name="static")
 templates = Jinja2Templates(directory=ROOT / "app" / "templates")
 templates.env.globals["demo_mode"] = settings.demo_mode
+STATIC_VERSION = asset_version(
+    static_directory / "app.css",
+    static_directory / "favicon.svg",
+)
+templates.env.globals["static_version"] = STATIC_VERSION
 
 
 @app.middleware("http")
@@ -136,6 +142,16 @@ async def enforce_demo_mode(request: Request, call_next):
                 )
             return RedirectResponse(f"/?message={quote(message)}", status_code=303)
     return await call_next(request)
+
+
+@app.get("/favicon.ico", include_in_schema=False)
+def legacy_favicon():
+    """Avoid a noisy 404 for clients that still request the conventional path."""
+    return RedirectResponse(
+        f"/static/favicon.svg?v={STATIC_VERSION}",
+        status_code=307,
+        headers={"Cache-Control": "public, max-age=31536000, immutable"},
+    )
 
 
 @app.get("/application-outcomes", response_class=HTMLResponse)

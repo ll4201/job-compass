@@ -1,0 +1,15 @@
+source_priority:
+  manual: 70
+  csv: 65
+restricted_platforms: [BOSS直聘, 智联招聘, 猎聘, LinkedIn]
+browser_extension_api: /api/v1/jobs
+compliance: Demo Mode 不执行网络采集、不保存账号密码或 Cookie、不自动投递或发送消息
+collection_defaults:
+  request_timeout_seconds: 15
+  request_interval_seconds: 1.0
+  retries: 0
+  max_pages: 0
+  collection_interval_hours: 24
+  missing_run_threshold: 3
+  inactive_days_threshold: 14
+sources: []

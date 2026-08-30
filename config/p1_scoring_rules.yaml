@@ -1,0 +1,34 @@
+version: p1-shadow-v1
+
+full_time_weights:
+  eligibility_score: 30
+  career_value_score: 25
+  direction_fit_score: 15
+  life_quality_score: 15
+  compensation_score: 10
+  freshness_score: 5
+
+internship_weights:
+  eligibility_score: 20
+  company_quality_score: 20
+  career_value_score: 25
+  project_ownership_score: 15
+  conversion_potential_score: 10
+  life_quality_score: 5
+  freshness_score: 5
+
+strategy_thresholds:
+  priority_eligibility: 75
+  priority_overall: 75
+  targeted_eligibility: 60
+  targeted_overall: 62
+  stretch_eligibility: 40
+  skip_eligibility: 30
+
+freshness:
+  - {max_days: 3, score: 100}
+  - {max_days: 7, score: 90}
+  - {max_days: 14, score: 75}
+  - {max_days: 30, score: 55}
+  - {max_days: 60, score: 35}
+  - {max_days: 99999, score: 20}

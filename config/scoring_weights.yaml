@@ -1,0 +1,14 @@
+version: fulltime-v2
+dimensions:
+  role_match: 25
+  compensation_benefits: 20
+  entry_level: 15
+  english_overseas: 15
+  technical_project: 10
+  career_growth: 10
+  company_quality: 5
+grades:
+  A: 85
+  B: 70
+  C: 55
+  D: 0

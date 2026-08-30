@@ -1,0 +1,12 @@
+states: [confirmed_yes, confirmed_no, unclear, not_disclosed, unreliable]
+schedule:
+  confirmed_yes: [双休, 周末双休, five-day workweek, 五天工作制]
+  big_small_week: [大小周]
+  single_rest: [单休, 月休四天, 月休4天]
+five_insurances:
+  confirmed_yes: [五险一金, 入职即缴, 社保公积金]
+  confirmed_no: [不缴五险一金, 无五险一金, 试用期不缴社保]
+paid_leave: [带薪年假, 年假]
+extra_benefits: [十三薪, 十四薪, 年终奖, 补充医疗, 商业保险, 年度体检, 餐补, 交通补贴, 住房补贴, 通讯补贴, 混合办公, 培训预算, 搬迁补贴]
+intensity_risks: [抗压能力强, 高强度, 奋斗者文化, 不拘泥于上下班时间, 加班可调休, 快节奏]
+

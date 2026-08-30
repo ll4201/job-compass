@@ -1,0 +1,52 @@
+version: internship-v1
+dimensions:
+  internship_role_match: 25
+  company_team_value: 20
+  conversion_opportunity: 15
+  core_business_output: 15
+  english_overseas_technical: 10
+  internship_conditions: 10
+  mentor_resume_value: 5
+grades:
+  A: 85
+  B: 70
+  C: 55
+  D: 0
+conversion:
+  conversion_level_3:
+    keywords: [明确转正, 可转正, 留用机会, 校招优先, 正式HC, 转正机会]
+    score: 14
+  conversion_level_2:
+    keywords: [长期实习, 历史留用, 潜在转正]
+    score: 9
+  conversion_level_0:
+    keywords: [明确无转正, 无转正, 不留用, 短期临时项目]
+    score: 2
+  conversion_level_1:
+    keywords: []
+    score: 5
+resume_output:
+  high: [产品规划, 用户需求分析, 竞品分析, 市场研究, 海外市场支持, 项目进度管理, 客户反馈分析, 数据分析, 产品上市, 技术支持, 问题分析, 独立报告, 独立方案, 可量化成果, 真实项目, 核心业务]
+  low: [纯翻译, 表格维护, 会议安排, 文档归档, 数据录入, 基础行政, 重复性事务]
+company_value_keywords: [头部, 世界500强, 全球化企业, 外企, 上市公司, 高成长, 核心团队, 核心产品]
+mentor_keywords: [导师, mentor, 培训, training, 实习证明, 作品集, 独立负责]
+allowance_keywords: [餐补, 交通补贴, 住房补贴]
+negative_conditions:
+  unpaid: {keywords: [无薪实习, 无薪], penalty: 8}
+  single_rest: {keywords: [单休, 每周工作6天, 每周六天], penalty: 5}
+  unpaid_overtime: {keywords: [长期无偿加班], penalty: 5}
+  no_agreement: {keywords: [不签实习协议, 没有实习协议], penalty: 3}
+  no_certificate: {keywords: [不提供实习证明], penalty: 2}
+conversion_questions:
+  - 该岗位是否有正式转正或校招优先通道？
+  - 团队过去是否有实习生留用案例？
+  - 转正岗位是否已有正式HC？
+internship_questions:
+  - 实习生会参与哪些真实项目？
+  - 是否能够独立负责某个模块或交付成果？
+  - 是否有固定导师？
+  - 实习周期和每周到岗天数是多少？
+  - 日常上下班和加班情况如何？
+  - 是否提供实习协议和实习证明？
+  - 实习结束后成果是否可以写入简历或作品集？
+

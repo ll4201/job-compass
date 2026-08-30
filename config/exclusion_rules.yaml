@@ -1,0 +1,10 @@
+allowed_city_keywords: [深圳, shenzhen, 深圳市]
+other_city_keywords: [广州, 东莞, 惠州, 香港, 上海, 北京, 杭州, 成都, 武汉, 苏州]
+ambiguous_location_keywords: [全国可选, 深圳及其他城市, 办公地待定, 地点可选]
+long_term_travel_keywords: [长期驻外, 常驻海外, 长期异地派遣, 长期出差]
+pure_rd_titles: [软件开发, 算法工程师, 嵌入式开发, fpga, 芯片设计, ic设计, 硬件电路设计]
+undesired_titles: [行政文员, 数据录入, 纯客服, 电话销售, 保险销售, 房产销售]
+senior_title_keywords: [senior, 高级, 资深, 经理, 总监, leader]
+entry_title_keywords: [assistant, coordinator, associate, junior, specialist, graduate, entry level, 助理, 专员, 管培生]
+max_full_time_experience_years: 3
+

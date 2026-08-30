@@ -1,0 +1,38 @@
+# Secrets: keep every environment file private except the empty example.
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/
+
+# Local data and runtime state. Demo data is generated from synthetic seed code.
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.pid
+logs/
+data/*
+!data/.gitkeep
+private/
+data/private/
+cache/
+
+# Front-end/tooling artifacts
+node_modules/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

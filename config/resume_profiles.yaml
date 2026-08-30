@@ -1,0 +1,35 @@
+config_version: public-demo-resume-profiles-v1
+
+# Labels and keyword strategies only; no real resume content is stored here.
+profiles:
+  technical_product:
+    label: 技术产品 / 项目版
+    title_keywords: [product, solution, technical support, project coordinator, 产品, 解决方案, 技术支持, 项目]
+    evidence_keywords: [engineering, technical, product, project, cross-functional, 工程, 技术, 产品, 项目, 跨部门]
+    emphasis: [工程技术基础, 项目实践, 数据分析, 跨团队沟通]
+    modification_templates:
+      - 突出与 JD 最相关的工程或项目实践
+      - 用问题、行动和结果重写项目经历
+      - 补充需求理解、跨团队协作和交付关键词
+
+  overseas_business:
+    label: 海外业务 / 市场版
+    title_keywords: [overseas, international, customer success, marketing, 海外, 国际, 客户成功, 市场]
+    evidence_keywords: [global, english, market, customer, data analysis, 全球, 英语, 市场, 客户, 数据分析]
+    emphasis: [英语沟通, 跨文化协作, 海外市场理解, 数据分析]
+    modification_templates:
+      - 突出英语沟通和跨文化协作
+      - 将项目经历改写为用户或商业结果
+      - 补充市场分析与跨团队沟通证据
+
+  general_entry:
+    label: 通用应届 / 管培版
+    title_keywords: [graduate, trainee, entry level, 管培, 校招, 应届]
+    evidence_keywords: [learning, leadership, communication, 学习能力, 沟通, 团队协作]
+    emphasis: [学习能力, 项目实践, 团队协作, 沟通能力]
+    modification_templates:
+      - 使用通用应届摘要说明方向兴趣和可迁移能力
+      - 选择能体现学习速度与责任感的项目
+      - 针对岗位补充少量关键词
+
+fallback_profile: general_entry

@@ -1,0 +1,78 @@
+version: evidence-v1
+
+limits:
+  opportunity_adjustment: 6
+  completeness_boost: 18
+  risk_steps: 1
+  outdated_years: 2
+
+confidence_weights:
+  high: 1.0
+  medium_high: 0.8
+  medium: 0.6
+  medium_low: 0.4
+  low: 0.2
+
+relevance_weights:
+  very_high: 1.0
+  high: 0.8
+  medium: 0.55
+  low: 0.3
+
+platform_defaults:
+  company_official: high
+  recruiter_communication: high
+  interview: high
+  friend_referral: medium
+  glassdoor: medium_low
+  linkedin: medium_low
+  nowcoder: medium_low
+  maimai: medium_low
+  zhihu: low
+  xiaohongshu: low
+  other: low
+
+verification_confidence:
+  official_confirmed: high
+  interview_confirmed: high
+  multiple_reports: medium_high
+  employee_reported: medium_low
+  conflicting_reports: low
+  unverified: low
+  outdated_report: low
+
+positive_categories:
+  - weekend_policy
+  - five_insurances_housing_fund
+  - paid_leave
+  - benefits
+  - internship_conversion
+  - training
+  - team_culture
+  - career_growth
+  - contract_type
+
+risk_categories:
+  - work_schedule
+  - overtime
+  - weekend_policy
+  - layoffs_or_stability
+  - contract_type
+  - overseas_travel
+  - management
+
+category_questions:
+  weekend_policy: 团队目前实际执行的休息制度是什么？
+  work_schedule: 团队日常平均下班时间大约是什么时候？
+  overtime: 加班频率如何，是否有调休或加班补偿？
+  internship_conversion: 该实习岗位目前是否存在正式留用 HC？
+  overseas_travel: 海外出差通常一年多少次，每次持续多久？
+  contract_type: 合同是否与公司主体直接签署？
+  five_insurances_housing_fund: 五险一金的缴纳基数和比例如何？
+  salary: 该岗位的固定薪资、绩效和奖金分别如何构成？
+  internship_pay: 实习薪资如何计算，是否另有餐补或交通补贴？
+  management: 团队的汇报关系和日常协作方式是怎样的？
+  team_culture: 团队如何分工，日常反馈和复盘机制是怎样的？
+  layoffs_or_stability: 当前团队业务是否稳定，近期人员规模是否有明显变化？
+
+conflict_question_prefix: 不同渠道对这项信息的描述不一致，请问当前实际情况是什么？

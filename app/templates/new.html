@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}录入岗位 · Job Compass{% endblock %}
+{% block content %}
+<section class="page-head">
+  <p class="eyebrow">QUICK CAPTURE</p>
+  <h1>粘贴完整 JD</h1>
+  <p>先解析招聘文本，再检查和修改识别结果。无法确定的内容保持未公开，不会自动猜测。</p>
+</section>
+
+{% if error %}<div class="form-error" role="alert">{{ error }}</div>{% endif %}
+
+<form class="paste-form" method="post" action="/jobs/preview" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+  <label>完整招聘文本
+    <textarea name="full_jd" rows="12" placeholder="在这里粘贴公司、职位、工作地点、岗位职责、任职要求、薪资福利等完整内容……" required>{{ values.get('full_jd','') or '' }}</textarea>
+  </label>
+  <button type="submit">解析并预览</button>
+</form>
+
+{% if previewed %}
+{% if not error %}<div class="notice">解析完成。请检查并修改下面的字段，再保存岗位。</div>{% endif %}
+<form class="job-form" method="post" action="/jobs/new" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+  <div class="grid">
+    <label>公司名称
+      <input name="company_name" value="{{ values.get('company_name','') or '' }}" placeholder="未识别，请手工填写" required>
+    </label>
+    <label>职位名称
+      <input name="job_title" value="{{ values.get('job_title','') or '' }}" placeholder="未识别，请手工填写" required>
+    </label>
+    <label>地点
+      <input name="location" value="{{ values.get('location','') or '' }}" placeholder="未公开">
+    </label>
+    <label>岗位类型
+      <select name="job_type">
+        <option value="full_time" {% if values.get('job_type','full_time') == 'full_time' %}selected{% endif %}>正式</option>
+        <option value="internship" {% if values.get('job_type') == 'internship' %}selected{% endif %}>实习</option>
+      </select>
+    </label>
+    <label>薪资
+      <input name="salary_raw" value="{{ values.get('salary_raw','') or '' }}" placeholder="未公开">
+    </label>
+    <label>经验要求
+      <input name="experience_raw" value="{{ values.get('experience_raw','') or '' }}" placeholder="未公开">
+    </label>
+    <label>学历要求
+      <input name="education_requirement" value="{{ values.get('education_requirement','') or '' }}" placeholder="未公开">
+    </label>
+    <label>来源链接
+      <input name="source_url" value="{{ values.get('source_url','') or '' }}" type="url">
+    </label>
+    <label class="wide">岗位职责
+      <textarea name="responsibilities" rows="5" placeholder="未公开">{{ values.get('responsibilities','') or '' }}</textarea>
+    </label>
+    <label class="wide">福利信息
+      <textarea name="benefits_raw" rows="4" placeholder="未公开">{{ values.get('benefits_raw','') or '' }}</textarea>
+    </label>
+    <label class="wide">完整 JD（随岗位保存）
+      <textarea name="full_jd" rows="12" readonly required>{{ values.get('full_jd','') or '' }}</textarea>
+      <small>只读字段仍会随表单提交。如需修改原文，请在上方文本框中修改并重新解析。</small>
+    </label>
+  </div>
+  <button type="submit">保存并分析</button>
+</form>
+{% endif %}
+{% endblock %}

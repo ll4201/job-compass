@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}{{ '编辑' if editing else '添加' }}外部证据 · Job Compass{% endblock %}
+{% block content %}
+<section class="page-intro">
+  <p class="eyebrow">{{ job.company_name }} · {{ job.job_title }}</p>
+  <h1>{{ '编辑证据' if editing else '粘贴外部分享' }}</h1>
+  <p>解析结果只用于预览。请人工确认后再保存，系统不会把未确认内容自动写入岗位事实。</p>
+</section>
+{% if error %}<div class="form-error">{{ error }}</div>{% endif %}
+{% if not editing %}
+<section class="evidence-paste">
+  <form method="post" action="/jobs/{{ job.id }}/evidence/preview">
+    <div class="form-grid">
+      <label>帖子标题<input name="source_title" value="{{ values.get('source_title','') or '' }}"></label>
+      <label>链接<input type="url" name="source_url" value="{{ values.get('source_url','') or '' }}"></label>
+      <label>发布时间<input type="date" name="published_at" value="{{ values.get('published_at','') or '' }}"></label>
+      <label>平台<select name="source_platform">{% for value in platforms %}<option value="{{ value }}" {% if values.get('source_platform','other') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label class="wide">正文或关键内容<textarea name="evidence_text" rows="12" required>{{ values.get('evidence_text','') or '' }}</textarea></label>
+    </div>
+    <button>解析并预览</button>
+  </form>
+</section>
+{% endif %}
+{% if previewed %}
+<section class="evidence-confirm">
+  <h2>人工确认解析结果</h2>
+  {% if values.get('detected_categories') %}<p>检测到的可能类别：{{ values.get('detected_categories')|join('、') }}。不同事实建议拆成多条证据保存。</p>{% endif %}
+  {% if duplicates %}<div class="warning"><b>可能重复：</b>{% for item in duplicates %}#{{ item.id }} {{ item.source_title or item.source_url or '未命名证据' }}{% if not loop.last %}；{% endif %}{% endfor %}</div>{% endif %}
+  <form method="post" action="{{ '/evidence/' ~ evidence.id ~ '/edit' if editing else '/jobs/' ~ job.id ~ '/evidence' }}">
+    <div class="form-grid">
+      <label>平台<select name="source_platform">{% for value in platforms %}<option value="{{ value }}" {% if values.get('source_platform','other') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label>发布时间<input type="date" name="published_at" value="{{ values.get('published_at','') or '' }}"></label>
+      <label>帖子标题<input name="source_title" value="{{ values.get('source_title','') or '' }}"></label>
+      <label>来源链接<input type="url" name="source_url" value="{{ values.get('source_url','') or '' }}"></label>
+      <label>公司<input name="company_name" required value="{{ values.get('company_name','') or '' }}"></label>
+      <label>城市<input name="city" value="{{ values.get('city','') or '' }}" placeholder="未公开则留空"></label>
+      <label>部门<input name="department" value="{{ values.get('department','') or '' }}" placeholder="未公开则留空"></label>
+      <label>岗位<input name="role_name" value="{{ values.get('role_name','') or '' }}" placeholder="未公开则留空"></label>
+      <label>用工类型<select name="employment_type"><option value="">未公开</option>{% for value in ['full_time','internship','part_time','contractor'] %}<option value="{{ value }}" {% if values.get('employment_type') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label>证据类别<select name="evidence_category">{% for value in categories %}<option value="{{ value }}" {% if values.get('evidence_category','other') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label>核实状态<select name="verification_status">{% for value in verification_statuses %}<option value="{{ value }}" {% if values.get('verification_status','unverified') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label>可信度<select name="source_confidence"><option value="">按来源与核实状态计算</option>{% for value in confidence_levels %}<option value="{{ value }}" {% if values.get('source_confidence') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label>内容倾向<select name="sentiment">{% for value in sentiments %}<option value="{{ value }}" {% if values.get('sentiment','neutral') == value %}selected{% endif %}>{{ value }}</option>{% endfor %}</select></label>
+      <label>作者身份<input name="source_author_type" value="{{ values.get('source_author_type','') or '' }}" placeholder="员工、候选人、HR、匿名等"></label>
+      <label class="wide">关键事实摘要<textarea name="evidence_value" rows="3">{{ values.get('evidence_value','') or '' }}</textarea></label>
+      <label class="wide">正文<textarea name="evidence_text" rows="10" required>{{ values.get('evidence_text','') or '' }}</textarea></label>
+      <label class="wide">个人备注<textarea name="user_notes" rows="3">{{ values.get('user_notes','') or '' }}</textarea></label>
+    </div>
+    <button>{{ '保存修改' if editing else '确认并保存证据' }}</button> <a href="/jobs/{{ job.id }}">取消</a>
+  </form>
+</section>
+{% endif %}
+{% endblock %}

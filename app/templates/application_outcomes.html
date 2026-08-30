@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}投递结果统计 · Job Compass{% endblock %}
+{% block content %}
+<section class="outcomes-hero">
+  <div>
+    <p class="eyebrow">REAL APPLICATION FEEDBACK</p>
+    <h1>投递结果统计</h1>
+    <p>当前岗位池共 {{ outcomes.total_jobs }} 个岗位。把真实投递、面试和 Offer 结果沉淀为可观察的数据，为未来校准 Employer Acceptance 提供依据。</p>
+  </div>
+  <a class="button-link" href="/?workflow_status=applied#job-pool">查看已投递岗位</a>
+</section>
+
+<section class="outcome-funnel" aria-label="求职转化漏斗">
+  <article><small>投递数量</small><strong data-metric="applications">{{ outcomes.application_count }}</strong><span>已确认曾投递</span></article>
+  <b aria-hidden="true">→</b>
+  <article><small>面试数量</small><strong data-metric="interviews">{{ outcomes.interview_count }}</strong><span>{{ outcomes.interview_rate }}% 投递转面试</span></article>
+  <b aria-hidden="true">→</b>
+  <article><small>Offer 数量</small><strong data-metric="offers">{{ outcomes.offer_count }}</strong><span>{{ outcomes.offer_rate }}% 投递转 Offer</span></article>
+</section>
+
+<section class="outcome-grid">
+  <article class="outcome-panel">
+    <header><div><p class="eyebrow">BY ROLE DIRECTION</p><h2>不同岗位方向成功率</h2></div><small>分母为该方向已投递岗位</small></header>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>岗位方向</th><th>投递</th><th>面试</th><th>Offer</th><th>面试率</th><th>Offer率</th></tr></thead>
+        <tbody>{% for row in outcomes.role_rows %}<tr data-role="{{ row.key }}"><td><strong>{{ row.label }}</strong></td><td>{{ row.applications }}</td><td>{{ row.interviews }}</td><td>{{ row.offers }}</td><td>{{ row.interview_rate }}%</td><td>{{ row.offer_rate }}%</td></tr>{% else %}<tr><td colspan="6" class="empty-cell">尚无已投递岗位。请先在岗位详情页记录 Candidate Status 或 Feedback。</td></tr>{% endfor %}</tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="outcome-panel">
+    <header><div><p class="eyebrow">BY COMPANY TYPE</p><h2>不同企业类型反馈</h2></div><small>不把未反馈视为失败</small></header>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>企业类型</th><th>投递</th><th>暂无回复</th><th>简历拒绝</th><th>面试拒绝</th><th>Offer</th><th>结果未记录</th></tr></thead>
+        <tbody>{% for row in outcomes.company_rows %}<tr data-company-type="{{ row.key }}"><td><strong>{{ row.label }}</strong><small>{{ row.interview_rate }}% 面试率</small></td><td>{{ row.applications }}</td><td>{{ row.no_response }}</td><td>{{ row.rejected_cv }}</td><td>{{ row.interview_failed }}</td><td>{{ row.offers }}</td><td>{{ row.pending }}</td></tr>{% else %}<tr><td colspan="7" class="empty-cell">尚无企业反馈数据。</td></tr>{% endfor %}</tbody>
+      </table>
+    </div>
+  </article>
+</section>
+
+<section class="feedback-breakdown">
+  <div><p class="eyebrow">FEEDBACK STATUS</p><h2>反馈结果分布</h2><p>另有 {{ outcomes.not_applied_count }} 个岗位明确记录为未投递。</p></div>
+  <div class="feedback-chips">{% for row in outcomes.feedback_rows %}<span data-feedback="{{ row.key }}"><b>{{ row.count }}</b>{{ row.label }}</span>{% endfor %}</div>
+</section>
+
+<aside class="analytics-note">
+  <strong>统计口径</strong>
+  <p>系统合并 Candidate Workflow 当前状态、状态历史和 Application Feedback 判断岗位是否曾到达投递、面试或 Offer 阶段；同一岗位只计一次。“结果未记录”和“暂无回复”均不等同于拒绝。</p>
+  <p>本页面只读取和展示反馈，不会重新评分，也不会自动调整 Employer Acceptance、V3 或 Final Strategy。</p>
+</aside>
+{% endblock %}

@@ -1,0 +1,30 @@
+.demo-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px max(24px, 5vw);
+  background: #18221e;
+  color: #f8f6ef;
+  border-bottom: 3px solid #c8f04a;
+}
+
+.demo-banner strong {
+  flex: none;
+  color: #c8f04a;
+  letter-spacing: .14em;
+}
+
+.demo-banner span {
+  font-size: 13px;
+}
+
+.demo-safe-note {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 4px solid #0e5d42;
+  background: #e5eadf;
+}
+
+@media (max-width: 800px) {
+  .demo-banner { align-items: flex-start; flex-direction: column; gap: 4px; }
+}

@@ -1,0 +1,99 @@
+profile_version: public-demo-profile-v1
+name: Public Demo Candidate
+candidate_stage: fresh_graduate
+location: 深圳
+
+# This is a fictional persona created solely for the public demo.
+education:
+  bachelor: Engineering
+  master: Technology Management
+  university: Demo University
+
+experience:
+  full_time_years: 0
+  acceptable_stretch_years: 2
+  maximum_reasonable_years: 3
+
+strengths: [工程基础, 数据分析, 项目管理, 英语沟通, 跨团队协作]
+positioning: 连接技术、产品与业务团队的早期职业候选人
+
+candidate_evidence:
+  education_signals: [Engineering, Technology Management, 英语环境]
+  technical_evidence: [工程, 数据分析, AI, 项目实践]
+  industry_interests: [智能硬件, 软件服务, 消费科技, 海外业务]
+  transferable_evidence: [项目管理, 跨团队沟通, 英文沟通, 商业分析]
+  known_experience_gaps: [正式产品经验, 正式营销经验, 全职工作经验]
+
+target_roles:
+  priority_1:
+    产品: [产品助理, 产品专员, associate product manager, product specialist, product operations]
+    项目: [项目助理, project coordinator, project specialist, pmo assistant, 项目交付]
+    技术支持: [技术支持, technical support, application specialist, solution engineer]
+  priority_2:
+    海外运营: [海外运营, overseas operations, customer success]
+    商务运营: [business operations, 渠道运营, 交付协调]
+    市场: [海外市场支持, product marketing]
+    管培生: [graduate program, management trainee]
+
+career_paths:
+  technical_product:
+    label: 技术背景向产品与解决方案发展
+    evidence_keywords: [产品规划, 用户需求, product, solution, 需求分析, 产品生命周期]
+  project_delivery:
+    label: 项目协调与跨部门交付
+    evidence_keywords: [项目管理, 项目交付, stakeholder, 风险管理, 协调]
+  international_business:
+    label: 海外业务与跨文化协作
+    evidence_keywords: [海外, global, international, 英语, 跨文化]
+  technical_support:
+    label: 技术支持与客户解决方案
+    evidence_keywords: [技术支持, application support, troubleshooting, solution]
+
+transferable_capabilities: [英语, english, 海外, global, 产品, 项目, 跨部门, 分析, 技术, 客户, 沟通]
+
+constraints:
+  required_location_statuses: [confirmed_shenzhen]
+  blocked_location_conditions: [location_conflict, non_shenzhen, multiple_locations]
+  compatible_seniority: [internship, graduate, entry, junior, associate]
+  stretch_seniority: [specialist, mid]
+  blocked_seniority: [senior_manager, director, head, executive]
+  hard_exclusion_keywords: [长期驻外, 海外派驻, 电话销售, 保险销售, 房产销售, 纯客服, 数据录入]
+
+career_value:
+  positive_responsibilities: [独立负责, 核心业务, 真实项目, 产品规划, 项目交付, 数据分析, 客户洞察, 跨部门协作]
+  weak_responsibilities: [纯辅助, 重复录入, 仅整理资料, 机械执行, 纯行政, 纯客服]
+  optionality_keywords: [产品, 项目, 技术, 数据, 海外, 客户, 商业, 解决方案]
+
+decision_thresholds:
+  highly_aligned: 80
+  aligned: 65
+  adjacent: 50
+  weak: 35
+
+personal_preferences:
+  location:
+    primary: [Shenzhen]
+    acceptable: [Shenzhen, Greater Bay Area]
+    exclude: [relocation_required]
+  career_stage:
+    stage: [new_graduate, early_career]
+    acceptable_experience_gap:
+      years: 1-2
+  willing_to_explore:
+    cross_functional_roles:
+      enabled: true
+    industries:
+      preferred: [smart_hardware, technology, software, international_business]
+      acceptable: [e_commerce, marketing, customer_success, project_management]
+  avoid_roles:
+    strongly_avoid: [pure_accounting, pure_finance, administrative_only, repetitive_operation_only]
+  technical_roles:
+    acceptable: [technical_support, solution_engineer, technical_project_manager, product_operation, data_analysis]
+    cautious: [software_engineering, data_engineering, cybersecurity, machine_learning]
+  application_strategy:
+    willing_to_try_stretch_roles:
+      enabled: true
+    low_cost_application:
+      enabled: true
+    resume_customization_allowed:
+      enabled: true

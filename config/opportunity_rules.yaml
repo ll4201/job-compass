@@ -1,0 +1,19 @@
+version: opportunity-v1
+company_types:
+  multinational_company: [外企, 跨国公司, multinational, global company]
+  mature_large_company: [大型成熟企业, 头部企业, 世界500强, 上市公司, 行业龙头]
+  growth_company: [成长型企业, 高成长, 快速增长, scale-up, fast-growing]
+  startup: [初创公司, 创业公司, startup, 早期团队]
+platform_value:
+  positive: [行业认可, 品牌价值, 头部企业, 世界500强, 上市公司, 行业龙头, 全球业务, 核心团队]
+  negative: [不透明外包, 第三方派遣, 主体不明, 业务不明]
+growth_value:
+  positive: [核心业务, 独立负责, 产品规划, 用户需求分析, 项目交付, 数据分析, 产品上市, 可量化成果, 职责广度, 晋升, 快速成长]
+  negative: [纯翻译, 表格维护, 会议安排, 文档归档, 数据录入, 基础行政, 重复性事务]
+stability_and_system:
+  positive: [制度完善, 管理规范, 导师, 培训, 轮岗, 双休, 五险一金, 带薪年假, 劳动合同, 业务稳定]
+  negative: [不签合同, 不缴社保, 单休, 长期无偿加班, 主体不明, 经营风险]
+upside_and_risk:
+  positive: [薪资上限, 奖金, 年终奖, 股权, 晋升空间, 快速成长, 职责广度]
+  negative: [薪资结构不透明, 底薪低, 高度依赖绩效, 高强度, 频繁出差, 经营风险]
+

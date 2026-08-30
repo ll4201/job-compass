@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}采集 #{{ run.id }} · Job Compass{% endblock %}
+{% block content %}
+<section class="page-intro">
+  <p class="eyebrow">{{ run.source.source_name if run.source else run.source_id }}</p>
+  <h1>采集运行 #{{ run.id }}</h1>
+  <p>{{ run.status }} · {{ 'dry-run' if run.dry_run else '正式导入' }} · 配置 {{ run.config_hash[:12] }}</p>
+</section>
+{% if run.error_summary %}<div class="form-error">{{ run.error_summary }}</div>{% endif %}
+<section class="collection-summary">
+  <div><b>{{ run.discovered_count }}</b><span>发现</span></div>
+  <div><b>{{ run.shenzhen_count }}</b><span>明确深圳</span></div>
+  <div><b>{{ run.imported_count }}</b><span>新增</span></div>
+  <div><b>{{ run.updated_count }}</b><span>更新</span></div>
+  <div><b>{{ run.duplicate_count }}</b><span>重复</span></div>
+  <div><b>{{ run.filtered_count }}</b><span>过滤</span></div>
+  <div><b>{{ run.failed_count }}</b><span>失败</span></div>
+</section>
+<div class="table-wrap"><table>
+  <thead><tr><th>职位</th><th>原始地点</th><th>来源地点 payload</th><th>标准化地点</th><th>地点状态</th><th>判断原因</th><th>来源</th><th>处理状态</th></tr></thead>
+  <tbody>{% for item in diagnostics %}<tr>
+    <td>{{ item.job_title or '—' }}</td>
+    <td>{{ item.raw_location or '—' }}</td>
+    <td><code>{{ item.source_location_payload }}</code></td>
+    <td>{{ item.normalized_location or '—' }}</td>
+    <td>{{ item.location_status }}</td>
+    <td>{{ item.location_reason }}</td>
+    <td>{% if item.source_url %}<a href="{{ item.source_url }}" target="_blank" rel="noopener">查看职位</a>{% else %}—{% endif %}</td>
+    <td>{{ item.record.normalized_status }}{% if item.record.imported_job_id %} · <a href="/jobs/{{ item.record.imported_job_id }}">#{{ item.record.imported_job_id }}</a>{% endif %}{% if item.record.error_message %}<br>{{ item.record.error_message }}{% endif %}</td>
+  </tr>{% endfor %}</tbody>
+</table></div>
+{% endblock %}

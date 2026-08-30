@@ -1,0 +1,57 @@
+version: travel-v1
+unknown:
+  travel_level: unknown
+  penalty: 0
+  risk_level: unknown
+  hard_filter: false
+levels:
+  travel_level_4:
+    keywords: [长期驻外, 海外驻点, 驻外, 海外派驻, 常驻海外, stationed overseas, overseas assignment, 能适应长期海外出差]
+    penalty_min: 15
+    penalty_max: 15
+    penalty: 15
+    risk_level: critical
+    hard_filter: true
+    interview_question: 是否存在长期驻外、海外派驻或轮驻安排？
+  travel_level_3:
+    keywords: [频繁海外出差, 频繁出差, 经常出差, extensive travel, frequent travel, global travel required, travel up to 50%, 全球出差]
+    penalty_min: 8
+    penalty_max: 15
+    penalty: 12
+    risk_level: major
+    hard_filter: false
+    interview_question: 频繁海外出差的年度累计天数和单次持续时间是多少？
+  travel_level_2:
+    keywords: [定期出差, 每季度出差, 每月出差, 出差比例约10%, 出差比例约20%, 出差比例约25%, travel up to 10%, travel up to 25%, customer site support, 客户现场支持]
+    penalty_min: 4
+    penalty_max: 7
+    penalty: 5
+    risk_level: medium
+    hard_filter: false
+    interview_question: 定期出差的实际频率、目的地和单次时长是多少？
+  travel_level_1:
+    keywords: [偶尔出差, 偶尔海外出差, 海外出差, occasional travel, international travel, 每年1至2次, 每年1-2次, 短期出差]
+    penalty_min: 1
+    penalty_max: 3
+    penalty: 2
+    risk_level: low
+    hard_filter: false
+    interview_question: 偶尔出差通常一年几次、每次持续多久？
+  travel_level_0:
+    keywords: [无出差, 不需要出差, 无需出差, 仅线上协作, no travel, remote collaboration only]
+    penalty_min: 0
+    penalty_max: 0
+    penalty: 0
+    risk_level: none
+    hard_filter: false
+    interview_question: null
+common_interview_questions:
+  - 该岗位海外出差的实际频率大约是多少？
+  - 每次出差通常持续多久？
+  - 一年累计出差时间大约是多少？
+  - 是否存在长期驻外或轮驻安排？
+  - 海外现场支持是计划性安排还是紧急响应？
+  - 出差期间是否有补贴、保险和调休？
+  - 是否需要跨时区值班或夜间响应？
+support_risk_keywords: [现场安装, 现场维护, 故障处理, 随时响应, 轮班, 夜间支持, 跨时区, on-call, shift, night support]
+

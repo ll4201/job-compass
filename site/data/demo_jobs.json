@@ -1,9 +1,29 @@
 {
   "schema_version": 1,
   "description": "Public Job Compass portfolio demo snapshot",
+  "sources": [
+    {
+      "source_id": "demo-static",
+      "source_name": "Synthetic Demo Dataset"
+    }
+  ],
+  "collection_summary": {
+    "source_name": "Synthetic Demo Dataset",
+    "status": "demo",
+    "dry_run": true,
+    "new_count": 8,
+    "priority_apply": 2,
+    "apply": 2,
+    "try": 1,
+    "hold": 2,
+    "filtered": 1,
+    "failed_sources": 0
+  },
   "jobs": [
     {
       "id": 1,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "星图科技（示例）",
       "job_title": "助理产品经理",
       "role_direction": "产品",
@@ -43,6 +63,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "high",
       "conversion_level": "not_applicable",
@@ -196,11 +217,14 @@
         "label": "立即定制并投递",
         "priority": "urgent",
         "next_steps": [
-          "使用定制简历",
-          "优先补强与岗位方向最相关的项目",
-          "24 小时内完成投递"
+          "确认岗位仍在招聘并复核硬性要求",
+          "按JD定制简历首屏、项目经历和关键词",
+          "准备简短求职动机并完成投递",
+          "将Candidate Status更新为applied"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "technical_product",
+        "recommended_resume_label": "技术产品 / 项目版",
+        "resume_focus": "工程技术基础；项目实践；数据分析；跨团队沟通"
       },
       "assessment_history": [
         {
@@ -246,10 +270,13 @@
           "is_outdated": false
         }
       ],
+      "source_ids": [],
       "candidate_status": "saved"
     },
     {
       "id": 2,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "远帆智能（示例）",
       "job_title": "国际项目协调专员",
       "role_direction": "项目",
@@ -289,6 +316,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "high",
       "conversion_level": "not_applicable",
@@ -439,14 +467,17 @@
       "effective_strategy": "targeted_apply",
       "action": {
         "type": "tailor_then_apply",
-        "label": "定制后投递",
+        "label": "定制简历后投递",
         "priority": "high",
         "next_steps": [
-          "针对岗位职责调整简历关键词",
-          "突出可迁移能力与相关项目",
-          "完成定制后投递"
+          "用最相关项目证明能力可以迁移到岗位",
+          "选择2至3段最相关项目并改写为成果导向表述",
+          "完成一次针对性简历检查后投递",
+          "将Candidate Status更新为applied"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "technical_product",
+        "recommended_resume_label": "技术产品 / 项目版",
+        "resume_focus": "工程技术基础；项目实践；数据分析；跨团队沟通"
       },
       "assessment_history": [
         {
@@ -474,10 +505,13 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "new"
     },
     {
       "id": 3,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "云阶软件（示例）",
       "job_title": "客户成功专员",
       "role_direction": "客户成功",
@@ -517,6 +551,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "medium",
       "conversion_level": "not_applicable",
@@ -667,14 +702,17 @@
       "effective_strategy": "low_cost_try",
       "action": {
         "type": "low_cost_apply",
-        "label": "低成本尝试",
+        "label": "低成本快速投递",
         "priority": "medium",
         "next_steps": [
-          "使用通用简历快速投递",
-          "不投入过多定制时间",
-          "通过反馈验证岗位方向"
+          "使用最接近岗位方向的现有简历版本",
+          "只调整标题、摘要和核心关键词",
+          "控制准备时间并直接投递验证市场反馈",
+          "记录是否获得回复"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "overseas_business",
+        "recommended_resume_label": "海外业务 / 市场版",
+        "resume_focus": "英语沟通；跨文化协作；海外市场理解；数据分析"
       },
       "assessment_history": [
         {
@@ -702,10 +740,13 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "new"
     },
     {
       "id": 4,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "澄芯电子（示例）",
       "job_title": "解决方案助理",
       "role_direction": "技术支持",
@@ -745,6 +786,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "medium",
       "conversion_level": "not_applicable",
@@ -899,14 +941,16 @@
       "effective_strategy": "hold",
       "action": {
         "type": "clarify_then_decide",
-        "label": "补充信息后决定",
-        "priority": "medium",
+        "label": "核实关键信息后决定",
+        "priority": "high",
         "next_steps": [
-          "确认缺失的核心信息",
-          "更新评估依据",
-          "信息充分后再决定是否投递"
+          "先补充工作地点、职责范围、招聘状态和关键待遇信息",
+          "优先通过JD原页、招聘方或面试沟通获取确认",
+          "确认后重新选择投递或归档，不重写基础评分"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "technical_product",
+        "recommended_resume_label": "技术产品 / 项目版",
+        "resume_focus": "工程技术基础；项目实践；数据分析；跨团队沟通"
       },
       "assessment_history": [
         {
@@ -934,10 +978,13 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "saved"
     },
     {
       "id": 5,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "青屿品牌（示例）",
       "job_title": "海外产品运营",
       "role_direction": "海外运营",
@@ -977,6 +1024,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "medium",
       "conversion_level": "not_applicable",
@@ -1135,14 +1183,16 @@
       "effective_strategy": "hold",
       "action": {
         "type": "clarify_then_decide",
-        "label": "补充信息后决定",
-        "priority": "medium",
+        "label": "核实关键信息后决定",
+        "priority": "high",
         "next_steps": [
-          "确认缺失的核心信息",
-          "更新评估依据",
-          "信息充分后再决定是否投递"
+          "先补充工作地点、职责范围、招聘状态和关键待遇信息",
+          "优先通过JD原页、招聘方或面试沟通获取确认",
+          "确认后重新选择投递或归档，不重写基础评分"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "technical_product",
+        "recommended_resume_label": "技术产品 / 项目版",
+        "resume_focus": "工程技术基础；项目实践；数据分析；跨团队沟通"
       },
       "assessment_history": [
         {
@@ -1170,10 +1220,13 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "new"
     },
     {
       "id": 6,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "北辰数据（示例）",
       "job_title": "产品运营专员（上海）",
       "role_direction": "产品运营",
@@ -1213,6 +1266,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "medium",
       "conversion_level": "not_applicable",
@@ -1364,14 +1418,17 @@
       },
       "effective_strategy": "skip",
       "action": {
-        "type": "archive",
-        "label": "归档 / 跳过",
+        "type": "archive_no_action",
+        "label": "归档，暂不行动",
         "priority": "none",
         "next_steps": [
-          "保留决策依据",
-          "不投入简历定制时间"
+          "记录跳过原因",
+          "不投入简历定制时间",
+          "仅在岗位条件发生实质变化时重新评估"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "not_applicable",
+        "recommended_resume_label": "无需准备简历",
+        "resume_focus": "无需准备简历"
       },
       "assessment_history": [
         {
@@ -1399,10 +1456,13 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "new"
     },
     {
       "id": 7,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "澜桥咨询（示例）",
       "job_title": "初级商业分析师",
       "role_direction": "商业分析",
@@ -1442,6 +1502,7 @@
       "availability_status": "closed",
       "closure_reason": "示例岗位已下线，用于展示失效岗位管理",
       "is_active": false,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "high",
       "conversion_level": "not_applicable",
@@ -1591,14 +1652,17 @@
       },
       "effective_strategy": "skip",
       "action": {
-        "type": "archive",
-        "label": "归档 / 跳过",
+        "type": "archive_no_action",
+        "label": "归档，暂不行动",
         "priority": "none",
         "next_steps": [
-          "保留决策依据",
-          "不投入简历定制时间"
+          "记录跳过原因",
+          "不投入简历定制时间",
+          "仅在岗位条件发生实质变化时重新评估"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "not_applicable",
+        "recommended_resume_label": "无需准备简历",
+        "resume_focus": "无需准备简历"
       },
       "assessment_history": [
         {
@@ -1626,10 +1690,13 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "new"
     },
     {
       "id": 8,
+      "source": "demo",
+      "source_count": 1,
       "company_name": "跃迁机器人（示例）",
       "job_title": "产品策略实习生",
       "role_direction": "产品",
@@ -1669,6 +1736,7 @@
       "availability_status": "active",
       "closure_reason": null,
       "is_active": true,
+      "is_sample": false,
       "travel_level": "none",
       "resume_output_potential": "high",
       "conversion_level": "medium",
@@ -1822,11 +1890,14 @@
         "label": "立即定制并投递",
         "priority": "urgent",
         "next_steps": [
-          "使用定制简历",
-          "优先补强与岗位方向最相关的项目",
-          "24 小时内完成投递"
+          "确认岗位仍在招聘并复核硬性要求",
+          "按JD定制简历首屏、项目经历和关键词",
+          "准备简短求职动机并完成投递",
+          "将Candidate Status更新为applied"
         ],
-        "resume_track": "技术产品 / 项目版"
+        "recommended_resume_profile": "technical_product",
+        "recommended_resume_label": "技术产品 / 项目版",
+        "resume_focus": "工程技术基础；项目实践；数据分析；跨团队沟通"
       },
       "assessment_history": [
         {
@@ -1854,6 +1925,7 @@
         }
       ],
       "evidence": [],
+      "source_ids": [],
       "candidate_status": "new"
     }
   ]

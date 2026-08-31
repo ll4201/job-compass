@@ -15,7 +15,7 @@ def load_snapshot() -> dict:
 def test_static_entrypoint_and_assets_are_self_contained() -> None:
     html = (SITE / "index.html").read_text(encoding="utf-8")
     assert (SITE / "assets" / "app.js").is_file()
-    assert (SITE / "assets" / "legacy-design.css").is_file()
+    assert (SITE / "assets" / "app.css").is_file()
     assert (SITE / "assets" / "static-site.css").is_file()
     assert (SITE / "assets" / "favicon.svg").is_file()
     assert "./data/demo_jobs.json" in (SITE / "assets" / "app.js").read_text(encoding="utf-8")
@@ -47,9 +47,27 @@ def test_dashboard_counts_are_derived_from_snapshot() -> None:
     counts = {name: sum(job["effective_strategy"] == name for job in jobs) for name in ["priority_apply", "targeted_apply", "low_cost_try", "hold", "skip"]}
     assert sum(counts.values()) == len(jobs)
     assert counts == {"priority_apply": 2, "targeted_apply": 1, "low_cost_try": 1, "hold": 2, "skip": 2}
+    active = [job for job in jobs if job["is_active"] and job["availability_status"] == "active" and not job["is_sample"]]
+    action_counts = {name: sum(job["action"]["type"] == name for job in active) for name in ["apply_now", "tailor_then_apply", "low_cost_apply", "clarify_then_decide"]}
+    assert action_counts == {"apply_now": 2, "tailor_then_apply": 1, "low_cost_apply": 1, "clarify_then_decide": 2}
+
+
+def test_home_reuses_original_template_order_and_css() -> None:
     html = (SITE / "index.html").read_text(encoding="utf-8")
-    for stat_id in ["stat-jobs", "stat-priority", "stat-targeted", "stat-hold", "stat-skip"]:
-        assert re.search(rf'id="{stat_id}">—<', html)
+    assert (SITE / "assets" / "app.css").read_bytes() == (ROOT / "app" / "static" / "app.css").read_bytes()
+    assert html.index("<header>") < html.index('class="demo-banner"') < html.index('class="daily-action-center"') < html.index('class="hero"') < html.index('id="job-filters"') < html.index('id="job-pool"')
+    assert "STATIC SNAPSHOT" not in html
+    assert "portfolio-intro" not in html
+    for label in ["投递统计", "数据源", "采集记录", "候选企业", "评分校准", "API", "导出 Demo 数据"]:
+        assert label in html
+
+
+def test_default_job_order_matches_legacy_query() -> None:
+    jobs = load_snapshot()["jobs"]
+    order = {"priority_apply": 0, "targeted_apply": 1, "stretch_apply": 2, "low_cost_try": 3, "hold": 4, "skip": 5}
+    active = [job for job in jobs if job["is_active"] and job["availability_status"] == "active" and not job["is_sample"]]
+    active.sort(key=lambda job: (order.get(job["assessment"]["final_strategy"], 6), -job["assessment"]["fit_score"]))
+    assert [job["id"] for job in active] == [1, 8, 2, 3, 4, 5, 6]
 
 
 def test_snapshot_excludes_sensitive_and_runtime_only_fields() -> None:
@@ -81,4 +99,3 @@ def test_static_runtime_has_no_backend_or_external_api_requests() -> None:
     assert "EventSource" not in javascript
     assert "XMLHttpRequest" not in javascript
     assert "?job=" in javascript
-

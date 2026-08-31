@@ -2,10 +2,61 @@
 
 **AI-assisted job discovery and decision system with explainable scoring, human review, and feedback-driven iteration.**
 
-[**Live Demo**](https://job-compass-demo.onrender.com)
+[**Current Live Demo**](https://job-compass-demo.onrender.com)
 
 > Public portfolio version built with synthetic data and completely isolated from the private system.  
-> The Demo is hosted on a free Render instance, so the first visit after inactivity may require a short cold start.
+> A prebuilt static portfolio site now lives in `site/`. The existing Render Web Service is intentionally retained only during the migration/acceptance period.
+
+---
+
+## Static Portfolio Architecture
+
+The production portfolio does not need a Python process:
+
+```text
+site/data/demo_jobs.json
+        ↓
+site/assets/app.js (filter, sort, statistics, detail routing)
+        ↓
+site/index.html + CSS
+        ↓
+Render Static Site / global CDN
+```
+
+- `site/index.html` provides the immediately visible application shell.
+- `site/data/demo_jobs.json` is a sanitized snapshot of the existing eight Demo jobs.
+- `site/assets/app.js` computes every count and runs search, filtering, sorting, details and Human-in-the-loop interactions in the browser.
+- Job detail links use `?job=<id>`, so a direct visit or refresh still requests `index.html` and does not need an SPA rewrite.
+- Candidate Status, Feedback and manual review are stored only in the visitor's browser (`localStorage`). They never leave the device.
+- There are no runtime API, database, crawler, AI, Python, third-party CDN, font or image requests.
+
+The former FastAPI application, Python dependencies and root `render.yaml` remain temporarily so the old Web Service can stay online while the new Static Site is validated. The Static Site does not read or execute any of them.
+
+## Local Static Test
+
+From the repository root:
+
+```powershell
+python -m http.server 4173 --directory site
+```
+
+Then open `http://127.0.0.1:4173/`. Do not double-click `index.html` with `file://`, because browsers can block the JSON request in that mode.
+
+## Render Static Site Settings
+
+Create a **new** resource with **Render → New → Static Site**. Do not convert or delete the existing Web Service yet.
+
+| Field | Value |
+|---|---|
+| Repository | `job-compass-public` |
+| Branch | `main` |
+| Root Directory | `site` |
+| Build Command | `echo "Static snapshot ready"` |
+| Publish Directory | `.` |
+
+No environment variables, database, disk, start command or health check are needed. The no-op build command exists only because Render's Static Site form expects a build step; the site is already committed in deployable form.
+
+After the new URL passes desktop, mobile and resume-link checks, update the README and resume link to that Static Site URL. Keep the old Web Service for a short rollback window, then remove it separately.
 
 ---
 

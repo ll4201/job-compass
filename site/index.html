@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Job Compass — AI-assisted job discovery and prioritization portfolio demo.">
+  <meta name="theme-color" content="#17382c">
+  <title>Job Compass · Portfolio Demo</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./assets/legacy-design.css">
+  <link rel="stylesheet" href="./assets/static-site.css">
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Job Compass 首页">JOB COMPASS <span>PUBLIC PORTFOLIO</span></a>
+    <nav aria-label="主要导航">
+      <a href="#dashboard">行动中心</a>
+      <a href="#job-pool">岗位列表</a>
+      <button class="nav-button" id="reset-local-data" type="button">重置本地体验数据</button>
+    </nav>
+  </header>
+
+  <aside class="demo-banner">
+    <strong>PORTFOLIO DEMO</strong>
+    <span>This public demo uses a static snapshot of processed job data for fast, reliable access. No live AI, crawler, database, or server is used.</span>
+  </aside>
+
+  <main id="app">
+    <noscript><div class="notice">此 Demo 需要浏览器 JavaScript 来读取静态岗位快照并完成筛选、排序和详情展示。</div></noscript>
+
+    <section id="list-view">
+      <section class="portfolio-intro" aria-labelledby="portfolio-title">
+        <div>
+          <p class="eyebrow">AI-ASSISTED JOB DECISION</p>
+          <h1 id="portfolio-title">判断是否值得<br><em>投入一次投递。</em></h1>
+          <p>Job Compass combines eligibility, direction fit, career value, life quality, compensation and information completeness into an explainable recommendation—while keeping the final decision human.</p>
+        </div>
+        <div class="snapshot-note">
+          <span>STATIC SNAPSHOT</span>
+          <strong id="hero-job-count">—</strong>
+          <small>公开示例岗位</small>
+        </div>
+      </section>
+
+      <p class="demo-safe-note"><strong>浏览提示：</strong>当前数据集为原 Demo 中已有的 <span id="note-job-count">—</span> 个完全虚构岗位。所有统计均由静态 JSON 实时计算；Candidate Status、Feedback 与人工评价只保存在当前浏览器。</p>
+
+      <section class="stats-grid" aria-label="岗位决策统计">
+        <article><span>JOBS</span><b id="stat-jobs">—</b><small>全部岗位</small></article>
+        <article class="stat-priority"><span>PRIORITY</span><b id="stat-priority">—</b><small>优先投递</small></article>
+        <article><span>TARGETED</span><b id="stat-targeted">—</b><small>定制后投递</small></article>
+        <article><span>HOLD</span><b id="stat-hold">—</b><small>补充信息</small></article>
+        <article><span>SKIP</span><b id="stat-skip">—</b><small>归档 / 跳过</small></article>
+      </section>
+
+      <section class="daily-action-center" id="dashboard" aria-labelledby="daily-title">
+        <header class="daily-action-heading">
+          <div><p class="eyebrow">DAILY APPLICATION PLAN</p><h2 id="daily-title">行动中心</h2><p>先处理高价值行动，再回到完整岗位池继续筛选。</p></div>
+        </header>
+        <div class="daily-action-grid" id="daily-actions" aria-live="polite">
+          <article class="action-lane action-now loading-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></article>
+          <article class="action-lane action-week loading-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></article>
+          <article class="action-lane action-quick loading-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></article>
+        </div>
+      </section>
+
+      <section id="job-pool" class="job-pool-section" aria-labelledby="job-pool-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">PROCESSED JOB SNAPSHOT</p><h2 id="job-pool-title">岗位列表</h2></div>
+          <p id="result-count" aria-live="polite">正在读取静态快照…</p>
+        </div>
+
+        <form class="filters static-filters" id="job-filters">
+          <label class="search-field"><span>搜索</span><input id="filter-search" type="search" placeholder="公司、职位或方向" autocomplete="off"></label>
+          <label><span>公司</span><select id="filter-company"><option value="">全部公司</option></select></label>
+          <label><span>地点</span><select id="filter-location"><option value="">全部地点</option></select></label>
+          <label><span>策略</span><select id="filter-strategy"><option value="">全部策略</option><option value="priority_apply">优先投递</option><option value="targeted_apply">定制后投递</option><option value="low_cost_try">低成本尝试</option><option value="hold">补充信息</option><option value="skip">归档 / 跳过</option></select></label>
+          <label><span>最低适配度</span><select id="filter-score"><option value="0">不限</option><option value="60">60+</option><option value="70">70+</option><option value="80">80+</option><option value="90">90+</option></select></label>
+          <label><span>排序</span><select id="filter-sort"><option value="priority">行动优先级</option><option value="fit-desc">适配度：高到低</option><option value="opportunity-desc">机会价值：高到低</option><option value="newest">发布时间：新到旧</option></select></label>
+          <label class="checkbox-field"><input id="filter-inactive" type="checkbox"><span>显示历史失效岗位</span></label>
+          <button type="reset" class="secondary">清除筛选</button>
+        </form>
+
+        <div id="job-groups" aria-live="polite">
+          <div class="loading-list"><div class="skeleton-line"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
+        </div>
+      </section>
+    </section>
+
+    <section id="detail-view" class="static-detail" hidden aria-live="polite"></section>
+    <div id="load-error" class="load-error" hidden role="alert"></div>
+  </main>
+
+  <footer>Public Portfolio Demo · Static snapshot · Human-in-the-loop</footer>
+</body>
+</html>

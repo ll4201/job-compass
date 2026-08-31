@@ -1,0 +1,1860 @@
+{
+  "schema_version": 1,
+  "description": "Public Job Compass portfolio demo snapshot",
+  "jobs": [
+    {
+      "id": 1,
+      "company_name": "星图科技（示例）",
+      "job_title": "助理产品经理",
+      "role_direction": "产品",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "confirmed_shenzhen",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "负责用户需求分析、产品方案设计、数据复盘，并与工程和市场团队推进产品迭代。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "confirmed_yes",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "confirmed_yes",
+      "statutory_holiday_status": "confirmed_yes",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.927920",
+      "first_seen_at": "2026-08-26 05:00:00.927920",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "high",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 91.0,
+        "fit_score": 91.0,
+        "opportunity_score": 88.0,
+        "information_completeness": 92.0,
+        "risk_level": "low",
+        "application_recommendation": "priority_apply",
+        "seniority_level": "entry",
+        "role_direction_match": "high",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 91.0,
+        "career_match_level": "highly_aligned",
+        "career_value_score": 88.0,
+        "career_value_level": "high",
+        "eligibility_score": 91.0,
+        "direction_fit_score": 91.0,
+        "life_quality_score": 78.0,
+        "freshness_score": 88.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 89.5,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": false,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 91.0,
+        "personal_preference_level": "high_alignment",
+        "final_strategy": "priority_apply",
+        "decision_reason": "方向、资历与职责质量均匹配，建议优先定制并投递。",
+        "action_type": "apply_now",
+        "action_priority": "urgent",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "A",
+        "recommendation": "方向、资历与职责质量均匹配，建议优先定制并投递。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [],
+        "interview_questions": [],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "confirmed",
+            "five_insurances": "confirmed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "负责用户需求分析并推动产品迭代"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "JD 明确披露基本制度"
+              ],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "负责用户需求分析并推动产品迭代"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "priority_apply",
+      "action": {
+        "type": "apply_now",
+        "label": "立即定制并投递",
+        "priority": "urgent",
+        "next_steps": [
+          "使用定制简历",
+          "优先补强与岗位方向最相关的项目",
+          "24 小时内完成投递"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 88.0,
+          "fit_score": 89.0,
+          "opportunity_score": 86.0,
+          "information_completeness": 92.0,
+          "risk_level": "low",
+          "application_recommendation": "priority_apply",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "priority_apply",
+          "decision_reason": null,
+          "grade": "A"
+        }
+      ],
+      "evidence": [
+        {
+          "source_platform": "demo_note",
+          "source_title": "招聘页补充说明（虚构示例）",
+          "published_at": null,
+          "city": null,
+          "department": null,
+          "role_name": null,
+          "employment_type": null,
+          "evidence_text": "团队会让新人参与一次完整的需求评审和迭代复盘。",
+          "evidence_category": "career_growth",
+          "evidence_value": "新人可参与完整产品迭代闭环",
+          "sentiment": "positive",
+          "source_confidence": "medium",
+          "relevance_level": "high",
+          "verification_status": "demo_only",
+          "is_outdated": false
+        }
+      ],
+      "candidate_status": "saved"
+    },
+    {
+      "id": 2,
+      "company_name": "远帆智能（示例）",
+      "job_title": "国际项目协调专员",
+      "role_direction": "项目",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "confirmed_shenzhen",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "协调海外客户需求、项目排期和交付风险，推动跨部门问题闭环。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "confirmed_yes",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "confirmed_yes",
+      "statutory_holiday_status": "confirmed_yes",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.927920",
+      "first_seen_at": "2026-08-26 05:00:00.927920",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "high",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 82.0,
+        "fit_score": 82.0,
+        "opportunity_score": 80.0,
+        "information_completeness": 86.0,
+        "risk_level": "low",
+        "application_recommendation": "apply",
+        "seniority_level": "entry",
+        "role_direction_match": "high",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 82.0,
+        "career_match_level": "aligned",
+        "career_value_score": 80.0,
+        "career_value_level": "high",
+        "eligibility_score": 82.0,
+        "direction_fit_score": 82.0,
+        "life_quality_score": 78.0,
+        "freshness_score": 88.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 81.0,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": false,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 62.0,
+        "employer_acceptance_level": "uncertain",
+        "personal_preference_score": 82.0,
+        "personal_preference_level": "high_alignment",
+        "final_strategy": "targeted_apply",
+        "decision_reason": "项目方向匹配，但需要在简历中强化交付与跨文化协作证据。",
+        "action_type": "tailor_then_apply",
+        "action_priority": "high",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "A",
+        "recommendation": "项目方向匹配，但需要在简历中强化交付与跨文化协作证据。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [],
+        "interview_questions": [],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "confirmed",
+            "five_insurances": "confirmed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "协调海外客户需求、项目排期和交付风险"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "JD 明确披露基本制度"
+              ],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "协调海外客户需求、项目排期和交付风险"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "targeted_apply",
+      "action": {
+        "type": "tailor_then_apply",
+        "label": "定制后投递",
+        "priority": "high",
+        "next_steps": [
+          "针对岗位职责调整简历关键词",
+          "突出可迁移能力与相关项目",
+          "完成定制后投递"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 79.0,
+          "fit_score": 80.0,
+          "opportunity_score": 78.0,
+          "information_completeness": 86.0,
+          "risk_level": "low",
+          "application_recommendation": "apply",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "targeted_apply",
+          "decision_reason": null,
+          "grade": "A"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "new"
+    },
+    {
+      "id": 3,
+      "company_name": "云阶软件（示例）",
+      "job_title": "客户成功专员",
+      "role_direction": "客户成功",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "confirmed_shenzhen",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "服务企业客户，分析使用数据并协同产品团队解决 adoption 问题。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "confirmed_yes",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "confirmed_yes",
+      "statutory_holiday_status": "confirmed_yes",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.928923",
+      "first_seen_at": "2026-08-26 05:00:00.928923",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "medium",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 67.0,
+        "fit_score": 67.0,
+        "opportunity_score": 71.0,
+        "information_completeness": 83.0,
+        "risk_level": "low",
+        "application_recommendation": "try",
+        "seniority_level": "entry",
+        "role_direction_match": "medium",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 67.0,
+        "career_match_level": "aligned",
+        "career_value_score": 71.0,
+        "career_value_level": "medium",
+        "eligibility_score": 67.0,
+        "direction_fit_score": 67.0,
+        "life_quality_score": 78.0,
+        "freshness_score": 88.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 69.0,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": false,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 67.0,
+        "personal_preference_level": "medium_alignment",
+        "final_strategy": "low_cost_try",
+        "decision_reason": "属于相邻方向，可控制准备成本尝试并用反馈验证匹配度。",
+        "action_type": "low_cost_apply",
+        "action_priority": "medium",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "B",
+        "recommendation": "属于相邻方向，可控制准备成本尝试并用反馈验证匹配度。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [],
+        "interview_questions": [],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "confirmed",
+            "five_insurances": "confirmed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "分析客户使用数据并协同产品团队解决问题"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "JD 明确披露基本制度"
+              ],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "分析客户使用数据并协同产品团队解决问题"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "low_cost_try",
+      "action": {
+        "type": "low_cost_apply",
+        "label": "低成本尝试",
+        "priority": "medium",
+        "next_steps": [
+          "使用通用简历快速投递",
+          "不投入过多定制时间",
+          "通过反馈验证岗位方向"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 64.0,
+          "fit_score": 65.0,
+          "opportunity_score": 69.0,
+          "information_completeness": 83.0,
+          "risk_level": "low",
+          "application_recommendation": "try",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "low_cost_try",
+          "decision_reason": null,
+          "grade": "B"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "new"
+    },
+    {
+      "id": 4,
+      "company_name": "澄芯电子（示例）",
+      "job_title": "解决方案助理",
+      "role_direction": "技术支持",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "needs_confirmation",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "协助客户需求澄清、方案文档和技术沟通；办公地点与出差频率需后续确认。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "not_disclosed",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "not_disclosed",
+      "statutory_holiday_status": "not_disclosed",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.928923",
+      "first_seen_at": "2026-08-26 05:00:00.928923",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "medium",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 79.0,
+        "fit_score": 79.0,
+        "opportunity_score": 78.0,
+        "information_completeness": 48.0,
+        "risk_level": "medium",
+        "application_recommendation": "hold_for_info",
+        "seniority_level": "entry",
+        "role_direction_match": "high",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 79.0,
+        "career_match_level": "aligned",
+        "career_value_score": 78.0,
+        "career_value_level": "high",
+        "eligibility_score": 79.0,
+        "direction_fit_score": 79.0,
+        "life_quality_score": null,
+        "freshness_score": 88.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 78.5,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": true,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 79.0,
+        "personal_preference_level": "medium_alignment",
+        "final_strategy": "hold",
+        "decision_reason": "方向有吸引力，但地点与工作节奏信息不足，先人工确认。",
+        "action_type": "clarify_then_decide",
+        "action_priority": "medium",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "B",
+        "recommendation": "方向有吸引力，但地点与工作节奏信息不足，先人工确认。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [
+          "办公地点",
+          "工作时间"
+        ],
+        "interview_questions": [
+          "请确认：办公地点",
+          "请确认：工作时间"
+        ],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "not_disclosed",
+            "five_insurances": "confirmed",
+            "location": "not_disclosed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "协助客户需求澄清、方案文档和技术沟通"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 12,
+              "max_score": 20,
+              "positive_evidence": [],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "协助客户需求澄清、方案文档和技术沟通"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "hold",
+      "action": {
+        "type": "clarify_then_decide",
+        "label": "补充信息后决定",
+        "priority": "medium",
+        "next_steps": [
+          "确认缺失的核心信息",
+          "更新评估依据",
+          "信息充分后再决定是否投递"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 76.0,
+          "fit_score": 77.0,
+          "opportunity_score": 76.0,
+          "information_completeness": 48.0,
+          "risk_level": "medium",
+          "application_recommendation": "hold_for_info",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "hold",
+          "decision_reason": null,
+          "grade": "B"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "saved"
+    },
+    {
+      "id": 5,
+      "company_name": "青屿品牌（示例）",
+      "job_title": "海外产品运营",
+      "role_direction": "海外运营",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "confirmed_shenzhen",
+      "salary_raw": null,
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "JD 仅说明协助海外产品运营和数据整理，关键职责、薪资及制度未披露。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": null,
+      "working_schedule": "not_disclosed",
+      "five_insurances_housing_fund": "not_disclosed",
+      "paid_leave": "not_disclosed",
+      "statutory_holiday_status": "not_disclosed",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.928923",
+      "first_seen_at": "2026-08-26 05:00:00.928923",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "medium",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 70.0,
+        "fit_score": 70.0,
+        "opportunity_score": 64.0,
+        "information_completeness": 32.0,
+        "risk_level": "unknown",
+        "application_recommendation": "hold_for_info",
+        "seniority_level": "entry",
+        "role_direction_match": "medium",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 70.0,
+        "career_match_level": "aligned",
+        "career_value_score": 64.0,
+        "career_value_level": "medium",
+        "eligibility_score": 70.0,
+        "direction_fit_score": 70.0,
+        "life_quality_score": null,
+        "freshness_score": 88.0,
+        "compensation_score": null,
+        "overall_priority_score": 67.0,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": true,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 70.0,
+        "personal_preference_level": "medium_alignment",
+        "final_strategy": "hold",
+        "decision_reason": "缺少影响投递决策的核心信息；缺失不作为负面证据，进入人工确认。",
+        "action_type": "clarify_then_decide",
+        "action_priority": "medium",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "B",
+        "recommendation": "缺少影响投递决策的核心信息；缺失不作为负面证据，进入人工确认。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [
+          "薪资",
+          "工作时间",
+          "五险一金",
+          "职责边界"
+        ],
+        "interview_questions": [
+          "请确认：薪资",
+          "请确认：工作时间",
+          "请确认：五险一金",
+          "请确认：职责边界"
+        ],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "not_disclosed",
+            "working_schedule": "not_disclosed",
+            "five_insurances": "not_disclosed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "协助海外产品运营和数据整理"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 12,
+              "max_score": 20,
+              "positive_evidence": [],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "协助海外产品运营和数据整理"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "hold",
+      "action": {
+        "type": "clarify_then_decide",
+        "label": "补充信息后决定",
+        "priority": "medium",
+        "next_steps": [
+          "确认缺失的核心信息",
+          "更新评估依据",
+          "信息充分后再决定是否投递"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 67.0,
+          "fit_score": 68.0,
+          "opportunity_score": 62.0,
+          "information_completeness": 32.0,
+          "risk_level": "unknown",
+          "application_recommendation": "hold_for_info",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "hold",
+          "decision_reason": null,
+          "grade": "B"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "new"
+    },
+    {
+      "id": 6,
+      "company_name": "北辰数据（示例）",
+      "job_title": "产品运营专员（上海）",
+      "role_direction": "产品运营",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "上海",
+      "title_location": null,
+      "structured_location": "上海",
+      "office_location": null,
+      "jd_location": "上海",
+      "normalized_location": "上海",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "上海",
+      "district": null,
+      "workplace_status": "non_shenzhen",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "工作地点明确为上海，需要长期现场办公。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "confirmed_yes",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "confirmed_yes",
+      "statutory_holiday_status": "confirmed_yes",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.928923",
+      "first_seen_at": "2026-08-26 05:00:00.928923",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "medium",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "excluded",
+        "hard_filter_reasons": [
+          "非目标地点：上海"
+        ],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 28.0,
+        "fit_score": 28.0,
+        "opportunity_score": 72.0,
+        "information_completeness": 90.0,
+        "risk_level": "critical",
+        "application_recommendation": "do_not_apply",
+        "seniority_level": "entry",
+        "role_direction_match": "low",
+        "seniority_match": "medium",
+        "experience_match": "high",
+        "career_match_score": 28.0,
+        "career_match_level": "adjacent",
+        "career_value_score": 72.0,
+        "career_value_level": "medium",
+        "eligibility_score": 28.0,
+        "direction_fit_score": 28.0,
+        "life_quality_score": 78.0,
+        "freshness_score": 88.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 50.0,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": false,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 28.0,
+        "personal_preference_level": "medium_alignment",
+        "final_strategy": "skip",
+        "decision_reason": "明确不满足 Demo 候选人的目标地点约束，因此排除。",
+        "action_type": "archive_no_action",
+        "action_priority": "medium",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "D",
+        "recommendation": "明确不满足 Demo 候选人的目标地点约束，因此排除。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [],
+        "interview_questions": [],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "confirmed",
+            "five_insurances": "confirmed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "工作地点：上海，需长期现场办公"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "JD 明确披露基本制度"
+              ],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "工作地点：上海，需长期现场办公"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "skip",
+      "action": {
+        "type": "archive",
+        "label": "归档 / 跳过",
+        "priority": "none",
+        "next_steps": [
+          "保留决策依据",
+          "不投入简历定制时间"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 25.0,
+          "fit_score": 26.0,
+          "opportunity_score": 70.0,
+          "information_completeness": 90.0,
+          "risk_level": "critical",
+          "application_recommendation": "do_not_apply",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "skip",
+          "decision_reason": null,
+          "grade": "D"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "new"
+    },
+    {
+      "id": 7,
+      "company_name": "澜桥咨询（示例）",
+      "job_title": "初级商业分析师",
+      "role_direction": "商业分析",
+      "job_type": "full_time",
+      "employment_type": "全职",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "confirmed_shenzhen",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "使用数据支持业务决策并制作分析报告；该示例记录已标记失效。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "confirmed_yes",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "confirmed_yes",
+      "statutory_holiday_status": "confirmed_yes",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "not_applicable",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-07-26 05:00:00.928923",
+      "first_seen_at": "2026-07-26 05:00:00.928923",
+      "is_new": true,
+      "freshness_status": "existing",
+      "availability_status": "closed",
+      "closure_reason": "示例岗位已下线，用于展示失效岗位管理",
+      "is_active": false,
+      "travel_level": "none",
+      "resume_output_potential": "high",
+      "conversion_level": "not_applicable",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 76.0,
+        "fit_score": 76.0,
+        "opportunity_score": 74.0,
+        "information_completeness": 81.0,
+        "risk_level": "low",
+        "application_recommendation": "apply",
+        "seniority_level": "entry",
+        "role_direction_match": "high",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 76.0,
+        "career_match_level": "aligned",
+        "career_value_score": 74.0,
+        "career_value_level": "medium",
+        "eligibility_score": 76.0,
+        "direction_fit_score": 76.0,
+        "life_quality_score": 78.0,
+        "freshness_score": 55.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 75.0,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": false,
+        "resume_type": "technical_product",
+        "job_age_days": 35,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 76.0,
+        "personal_preference_level": "medium_alignment",
+        "final_strategy": "targeted_apply",
+        "decision_reason": "历史评估有一定匹配，但岗位已失效，不再进入行动中心。",
+        "action_type": "tailor_then_apply",
+        "action_priority": "high",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "B",
+        "recommendation": "历史评估有一定匹配，但岗位已失效，不再进入行动中心。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [],
+        "interview_questions": [],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "full_time",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "confirmed",
+            "five_insurances": "confirmed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "使用数据支持业务决策"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "JD 明确披露基本制度"
+              ],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "使用数据支持业务决策"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "skip",
+      "action": {
+        "type": "archive",
+        "label": "归档 / 跳过",
+        "priority": "none",
+        "next_steps": [
+          "保留决策依据",
+          "不投入简历定制时间"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 73.0,
+          "fit_score": 74.0,
+          "opportunity_score": 72.0,
+          "information_completeness": 81.0,
+          "risk_level": "low",
+          "application_recommendation": "apply",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "targeted_apply",
+          "decision_reason": null,
+          "grade": "B"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "new"
+    },
+    {
+      "id": 8,
+      "company_name": "跃迁机器人（示例）",
+      "job_title": "产品策略实习生",
+      "role_direction": "产品",
+      "job_type": "internship",
+      "employment_type": "实习",
+      "location_raw": "深圳",
+      "title_location": null,
+      "structured_location": "深圳",
+      "office_location": null,
+      "jd_location": "深圳",
+      "normalized_location": "深圳",
+      "location_conflict": false,
+      "location_conflict_reason": null,
+      "city": "深圳",
+      "district": null,
+      "workplace_status": "confirmed_shenzhen",
+      "salary_raw": "15k–22k · 13薪（示例）",
+      "experience_raw": "0–2年 / 优秀应届生可申请",
+      "education_requirement": "本科及以上",
+      "major_requirement": null,
+      "language_requirement": null,
+      "description": "参与机器人产品调研、竞品分析、需求整理和项目复盘，每周至少四天。本岗位为完全虚构的 Demo JD。",
+      "responsibilities": "参与需求分析、项目推进、数据复盘和跨团队协作。",
+      "requirements": "具备结构化分析、沟通协作和快速学习能力。",
+      "benefits_raw": "双休、五险一金、带薪年假（示例）",
+      "working_schedule": "confirmed_yes",
+      "five_insurances_housing_fund": "confirmed_yes",
+      "paid_leave": "confirmed_yes",
+      "statutory_holiday_status": "confirmed_yes",
+      "overtime_risk": "not_disclosed",
+      "internship_conversion": "possible",
+      "travel_requirement": "not_disclosed",
+      "published_at": "2026-08-26 05:00:00.928923",
+      "first_seen_at": "2026-08-26 05:00:00.928923",
+      "is_new": true,
+      "freshness_status": "new",
+      "availability_status": "active",
+      "closure_reason": null,
+      "is_active": true,
+      "travel_level": "none",
+      "resume_output_potential": "high",
+      "conversion_level": "medium",
+      "assessment": {
+        "hard_filter_status": "passed",
+        "hard_filter_reasons": [],
+        "role_match_score": 0.0,
+        "compensation_benefits_score": 0.0,
+        "entry_level_score": 0.0,
+        "english_overseas_score": 0.0,
+        "technical_project_score": 0.0,
+        "career_growth_score": 0.0,
+        "company_quality_score": 0.0,
+        "penalty_score": 0.0,
+        "total_score": 88.0,
+        "fit_score": 88.0,
+        "opportunity_score": 91.0,
+        "information_completeness": 84.0,
+        "risk_level": "low",
+        "application_recommendation": "priority_apply",
+        "seniority_level": "internship",
+        "role_direction_match": "high",
+        "seniority_match": "high",
+        "experience_match": "high",
+        "career_match_score": 88.0,
+        "career_match_level": "highly_aligned",
+        "career_value_score": 91.0,
+        "career_value_level": "high",
+        "eligibility_score": 88.0,
+        "direction_fit_score": 88.0,
+        "life_quality_score": 78.0,
+        "freshness_score": 88.0,
+        "compensation_score": 76.0,
+        "overall_priority_score": 89.5,
+        "support_role_type": "not_support_role",
+        "needs_confirmation": false,
+        "resume_type": "technical_product",
+        "job_age_days": 4,
+        "date_source": "published_at",
+        "employer_acceptance_score": 72.0,
+        "employer_acceptance_level": "high",
+        "personal_preference_score": 88.0,
+        "personal_preference_level": "high_alignment",
+        "final_strategy": "priority_apply",
+        "decision_reason": "高质量实习使用独立框架评估；职责产出与转正讨论价值较高。",
+        "action_type": "apply_now",
+        "action_priority": "urgent",
+        "profile_version": "public-demo-profile-v1",
+        "company_type": "established",
+        "opportunity_breakdown_json": {},
+        "grade": "A",
+        "recommendation": "高质量实习使用独立框架评估；职责产出与转正讨论价值较高。",
+        "strengths": [
+          "方向相关",
+          "具备可迁移能力"
+        ],
+        "risks": [],
+        "missing_information": [],
+        "interview_questions": [],
+        "suggested_resume_track": "技术产品 / 项目版",
+        "assessment_version": "public-demo-v1",
+        "travel_level": "none",
+        "travel_penalty": 0.0,
+        "explanation_json": {
+          "framework": "internship",
+          "information_states": {
+            "salary": "confirmed",
+            "working_schedule": "confirmed",
+            "five_insurances": "confirmed",
+            "location": "confirmed"
+          },
+          "opportunity_breakdown": {
+            "career_growth": {
+              "label": "成长空间",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与产品调研、竞品分析、需求整理和项目复盘"
+              ],
+              "negative_evidence": []
+            },
+            "role_scope": {
+              "label": "职责质量",
+              "score": 16,
+              "max_score": 20,
+              "positive_evidence": [
+                "参与真实业务项目并与多团队协作"
+              ],
+              "negative_evidence": []
+            },
+            "employment_quality": {
+              "label": "工作质量",
+              "score": 17,
+              "max_score": 20,
+              "positive_evidence": [
+                "JD 明确披露基本制度"
+              ],
+              "negative_evidence": []
+            }
+          },
+          "dimensions": [
+            {
+              "name": "方向匹配",
+              "score": 24,
+              "max_score": 30,
+              "items": [
+                {
+                  "label": "目标方向关键词",
+                  "points": 8,
+                  "quote": "参与产品调研、竞品分析、需求整理和项目复盘"
+                }
+              ]
+            },
+            {
+              "name": "职业价值",
+              "score": 20,
+              "max_score": 25,
+              "items": [
+                {
+                  "label": "跨团队项目责任",
+                  "points": 6,
+                  "quote": "与产品、工程和市场团队协作推进项目"
+                }
+              ]
+            }
+          ],
+          "penalty_details": [],
+          "final_calculation": {
+            "formula": "各维度加权得分 − 明确风险项"
+          },
+          "application_strategy": {
+            "career_match": {
+              "career_match_reason": "方向与可迁移能力基本一致。"
+            },
+            "career_value": {
+              "career_value_reason": "职责包含真实项目与跨团队协作。"
+            },
+            "employer_acceptance": {
+              "employer_acceptance_reason": "仍需招聘方验证项目经验。"
+            },
+            "personal_preference": {
+              "personal_preference_reason": "符合公开 Demo 候选人画像。"
+            }
+          }
+        },
+        "assessed_at": "2026-08-30 05:00:00.945685"
+      },
+      "effective_strategy": "priority_apply",
+      "action": {
+        "type": "apply_now",
+        "label": "立即定制并投递",
+        "priority": "urgent",
+        "next_steps": [
+          "使用定制简历",
+          "优先补强与岗位方向最相关的项目",
+          "24 小时内完成投递"
+        ],
+        "resume_track": "技术产品 / 项目版"
+      },
+      "assessment_history": [
+        {
+          "assessment_version": "public-demo-baseline",
+          "assessed_at": "2026-08-23 05:00:00.945685",
+          "total_score": 85.0,
+          "fit_score": 86.0,
+          "opportunity_score": 89.0,
+          "information_completeness": 84.0,
+          "risk_level": "low",
+          "application_recommendation": "priority_apply",
+          "career_match_score": null,
+          "career_value_score": null,
+          "eligibility_score": null,
+          "direction_fit_score": null,
+          "life_quality_score": null,
+          "freshness_score": null,
+          "compensation_score": null,
+          "overall_priority_score": null,
+          "employer_acceptance_score": null,
+          "personal_preference_score": null,
+          "final_strategy": "priority_apply",
+          "decision_reason": null,
+          "grade": "A"
+        }
+      ],
+      "evidence": [],
+      "candidate_status": "new"
+    }
+  ]
+}
